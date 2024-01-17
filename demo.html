@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+        
+        .wrapper {
+            height: 800px;
+            width: 1089px;
+            background-color: antiquewhite;
+            border: 1px solid blueviolet
+        }
+        
+        .header {
+            height: 150px;
+            width: 1089px;
+            background-color: rgb(139, 127, 110);
+            position: relative;
+            border-bottom: 1px solid blueviolet;
+        }
+        
+        .header .p1 {
+            position: absolute;
+            right: 20px;
+            top: 40px;
+            font-size: 30px;
+            color: whitesmoke;
+        }
+        
+        .header:hover>.p1 {
+            color: rgb(7, 110, 158)
+        }
+        
+        .nav {
+            height: 50px;
+            width: 1089px;
+            background-color: wheat;
+            border-bottom: 1px solid blueviolet
+        }
+        
+        .content {
+            height: 450px;
+            width: 1089px;
+            background-color: rgb(97, 165, 221);
+            position: relative;
+        }
+        
+        .footer {
+            height: 150px;
+            width: 1089px;
+            background-color: rgb(139, 127, 110);
+            position: relative;
+            border-top: 1px solid blueviolet
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .menu li {
+            height: 50px;
+            width: 150px;
+            background-color: antiquewhite;
+            float: left;
+            text-indent: 20px;
+            line-height: 50px;
+            list-style-type: none;
+            position: relative;
+            border: 1px solid rebeccapurple
+        }
+        
+        li a {
+            text-decoration: none;
+        }
+        
+        .menu li:hover {
+            background-color: rgb(197, 103, 123);
+        }
+        
+        li:hover>a {
+            font-style: italic;
+            color: aqua;
+        }
+        
+        .menu li .sub-menu {
+            display: none;
+            position: absolute;
+        }
+        
+        .menu li:hover>.sub-menu {
+            display: block;
+        }
+        
+        .menu li .sub-menu li .sub-menu {
+            display: none;
+        }
+        
+        .menu li .sub-menu li:hover>.sub-menu {
+            display: block;
+            top: 0px;
+            left: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="../img/Capture.PNG" alt="" srcset="" width="1089" height="150">
+            <p class="p1">Mua he xanh</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="https://iuh.edu.vn">Home</a></li>
+            <li><a href="https://fit.iuh.edu.vn">Khoa CNTT</a></li>
+            <li><a href="">Thu vien</a></li>
+            <li><a href="">Trung tam TH</a>
+                <ul class="sub-menu">
+                    <li><a href="#">To HT</a></li>
+                    <li><a href="#">To DH</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Tin A</a></li>
+                            <li><a href="">Tin B</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">To DV</a></li>
+                </ul>
+            </li>
+            <li><a href="">Can tin</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
